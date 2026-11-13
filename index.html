@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مد.خانه | خرید آنلاین پوشاک مردانه و زنانه با کالکشن محدود</title>
+<meta name="description" content="مد.خانه فروشگاه آنلاین پوشاک با کالکشن‌های محدود: شلوار، لباس، بالاپوش و اکسسوری با دوخت دقیق، ارسال سریع و بازگشت ۷ روزه.">
+<meta name="keywords" content="خرید آنلاین لباس, پوشاک مردانه, پوشاک زنانه, شلوار, پافر, بالاپوش, مد.خانه">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#050506">
+<link rel="canonical" href="https://www.modkhaneh.ir/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="مد.خانه">
+<meta property="og:title" content="مد.خانه | خرید آنلاین پوشاک با کالکشن محدود">
+<meta property="og:description" content="کالکشن‌های محدود پوشاک با دوخت دقیق و ارسال سریع.">
+<meta property="og:url" content="https://www.modkhaneh.ir/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"مد.خانه","url":"https://www.modkhaneh.ir/","telephone":"+98-21-12345678","email":"info@modkhaneh.ir","description":"فروشگاه آنلاین پوشاک مردانه و زنانه با کالکشن محدود","currenciesAccepted":"IRR","paymentAccepted":"Online"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #050506;
+    --ink: #f2f0ea;
+    --muted: #7d7b76;
+    --ember: #ff5b2e;
+    --ember-2: #ffb347;
+    --glass: rgba(255, 255, 255, 0.04);
+    --edge: rgba(255, 255, 255, 0.09);
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Vazirmatn", Tahoma, sans-serif;
+    background: var(--void); color: var(--ink);
+    line-height: 1.7; overflow-x: hidden;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; border: none; cursor: pointer; background: none; color: inherit; }
+
+  /* atmosphere */
+  #glow {
+    position: fixed; width: 520px; height: 520px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 91, 46, 0.22), transparent 65%);
+    pointer-events: none; transform: translate(-50%, -50%); z-index: 1;
+    transition: opacity 0.4s; mix-blend-mode: screen;
+  }
+  .grain {
+    position: fixed; inset: -50%; pointer-events: none; z-index: 50; opacity: 0.07;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    animation: grain 1s steps(6) infinite;
+  }
+  @keyframes grain {
+    0% { transform: translate(0,0); } 20% { transform: translate(-3%,2%); } 40% { transform: translate(2%,-3%); }
+    60% { transform: translate(-2%,3%); } 80% { transform: translate(3%,1%); } 100% { transform: translate(0,0); }
+  }
+
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 40;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.1rem clamp(1rem, 4vw, 3rem);
+    background: linear-gradient(to bottom, var(--void), transparent);
+  }
+  .logo { font-weight: 900; font-size: 1.15rem; letter-spacing: 2px; }
+  .logo i { font-style: normal; color: var(--ember); }
+  nav { display: flex; gap: 1.8rem; font-size: 0.85rem; color: var(--muted); }
+  nav a { transition: color 0.2s; }
+  nav a:hover { color: var(--ink); }
+  .cart-btn {
+    border: 1px solid var(--edge); padding: 0.5rem 1.1rem; border-radius: 999px;
+    font-size: 0.85rem; background: var(--glass); backdrop-filter: blur(10px);
+  }
+  .cart-count { color: var(--ember); margin-right: 0.3rem; }
+
+  /* hero */
+  .hero {
+    position: relative; min-height: 100vh; display: grid; place-items: center; text-align: center;
+    padding: 6rem clamp(1rem, 5vw, 3rem) 4rem; overflow: hidden; z-index: 2;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: radial-gradient(60% 50% at 50% 40%, rgba(255, 91, 46, 0.18), transparent 70%);
+    animation: breathe 6s ease-in-out infinite;
+  }
+  @keyframes breathe { 0%, 100% { opacity: 0.6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+  .hero .tag {
+    display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; letter-spacing: 2px;
+    border: 1px solid var(--edge); padding: 0.4rem 0.9rem; border-radius: 999px; margin-bottom: 2rem;
+    color: var(--muted);
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ember); box-shadow: 0 0 12px var(--ember); animation: pulse 1.6s infinite; }
+  @keyframes pulse { 50% { opacity: 0.3; } }
+  .hero h1 {
+    font-size: clamp(3rem, 12vw, 10rem); font-weight: 900; line-height: 0.95; letter-spacing: -2px;
+  }
+  .gradient-text {
+    background: linear-gradient(100deg, var(--ink) 0%, var(--ember-2) 40%, var(--ember) 60%, var(--ink) 100%);
+    background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shine 5s linear infinite;
+  }
+  @keyframes shine { to { background-position: 200% center; } }
+  .hero p { color: var(--muted); max-width: 32rem; margin: 2rem auto 2.5rem; font-size: 1.05rem; }
+
+  .countdown { display: flex; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
+  .cd {
+    min-width: 84px; padding: 0.9rem 0.6rem; border: 1px solid var(--edge); background: var(--glass);
+    border-radius: 16px; backdrop-filter: blur(10px);
+  }
+  .cd b { display: block; font-size: 1.8rem; font-weight: 900; font-variant-numeric: tabular-nums; }
+  .cd span { font-size: 0.7rem; color: var(--muted); letter-spacing: 1px; }
+
+  .magnetic {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 1rem 2.4rem; border-radius: 999px; font-weight: 700;
+    background: var(--ink); color: var(--void);
+    transition: transform 0.25s cubic-bezier(.2,.8,.2,1), box-shadow 0.3s;
+    box-shadow: 0 0 0 0 rgba(255, 91, 46, 0.5);
+  }
+  .magnetic:hover { box-shadow: 0 0 0 10px rgba(255, 91, 46, 0.15), 0 0 40px rgba(255, 91, 46, 0.4); }
+
+  /* marquee */
+  .marquee {
+    overflow: hidden; border-top: 1px solid var(--edge); border-bottom: 1px solid var(--edge);
+    padding: 1.2rem 0; background: var(--ink); color: var(--void); position: relative; z-index: 2;
+    transform: rotate(-1.5deg) scale(1.03); margin: 2rem 0;
+  }
+  .marquee-track { display: inline-flex; white-space: nowrap; animation: slide 22s linear infinite; font-weight: 900; font-size: 1.3rem; }
+  .marquee-track span { padding: 0 1.5rem; }
+  @keyframes slide { to { transform: translateX(-50%); } }
+
+  /* products */
+  section.wrap { position: relative; z-index: 2; padding: clamp(4rem, 9vw, 7rem) clamp(1rem, 5vw, 3rem); }
+  .head { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; }
+  .head h2 { font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .head small { color: var(--muted); }
+  .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); perspective: 1000px; }
+  .card {
+    position: relative; border-radius: 22px; border: 1px solid var(--edge);
+    background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));
+    padding: 0.8rem; transform-style: preserve-3d;
+    transition: transform 0.15s ease-out, border-color 0.3s;
+  }
+  .card:hover { border-color: rgba(255, 91, 46, 0.5); }
+  .ph {
+    aspect-ratio: 3 / 4; border-radius: 16px; display: grid; place-items: center;
+    background: repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0 10px, transparent 10px 20px);
+    border: 1px dashed rgba(255,255,255,0.14); color: var(--muted); font-size: 0.85rem;
+    transform: translateZ(40px);
+  }
+  .meta { padding: 1rem 0.4rem 0.4rem; transform: translateZ(20px); }
+  .badge { font-size: 0.7rem; letter-spacing: 1.5px; color: var(--ember); }
+  .name { font-weight: 700; font-size: 1.1rem; margin: 0.2rem 0; }
+  .spec { font-size: 0.75rem; color: var(--muted); }
+  .row { display: flex; justify-content: space-between; align-items: center; margin-top: 0.9rem; }
+  .price { font-weight: 900; font-size: 1.1rem; }
+  .buy {
+    padding: 0.55rem 1.1rem; border-radius: 999px; background: var(--ember); color: #fff;
+    font-size: 0.8rem; font-weight: 700; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .buy:hover { transform: scale(1.05); box-shadow: 0 0 24px rgba(255, 91, 46, 0.6); }
+
+  /* join */
+  .join {
+    position: relative; z-index: 2; margin: 0 clamp(1rem, 5vw, 3rem) 5rem;
+    border-radius: 32px; padding: clamp(2.5rem, 6vw, 5rem) 1.5rem; text-align: center;
+    background: var(--ink); color: var(--void); overflow: hidden;
+  }
+  .join::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(40% 80% at 50% 120%, var(--ember), transparent 70%); opacity: 0.6;
+  }
+  .join * { position: relative; }
+  .join h3 { font-size: clamp(2rem, 5vw, 3.6rem); font-weight: 900; letter-spacing: -1px; }
+  .join p { max-width: 30rem; margin: 0.8rem auto 2rem; opacity: 0.7; }
+  .join form { display: inline-flex; gap: 0.5rem; background: rgba(0,0,0,0.1); padding: 0.4rem; border-radius: 999px; flex-wrap: wrap; justify-content: center; }
+  .join input { background: transparent; border: none; outline: none; font: inherit; padding: 0.7rem 1.2rem; min-width: 240px; color: var(--void); }
+  .join button { background: var(--void); color: var(--ink); padding: 0.7rem 1.6rem; border-radius: 999px; font-weight: 700; }
+
+  footer {
+    position: relative; z-index: 2; border-top: 1px solid var(--edge);
+    padding: 2rem clamp(1rem, 5vw, 3rem); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    color: var(--muted); font-size: 0.8rem;
+  }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(40px); filter: blur(6px); transition: opacity 0.9s cubic-bezier(.2,.8,.2,1), transform 0.9s cubic-bezier(.2,.8,.2,1), filter 0.9s; }
+  .reveal.in { opacity: 1; transform: none; filter: none; }
+
+  #embers { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .modal { position: fixed; inset: 0; z-index: 70; display: grid; place-items: center; background: rgba(5, 5, 6, 0.7); backdrop-filter: blur(14px); opacity: 0; pointer-events: none; transition: opacity 0.4s; }
+  .modal.open { opacity: 1; pointer-events: auto; }
+  .sheet { position: relative; width: min(760px, 92vw); display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; background: #0d0d0f; border: 1px solid var(--edge); border-radius: 28px; padding: 1.2rem; transform: perspective(1200px) rotateX(12deg) scale(0.92); transition: transform 0.6s cubic-bezier(.2,.8,.2,1); }
+  .modal.open .sheet { transform: perspective(1200px) rotateX(0) scale(1); }
+  .sheet .ph.big { aspect-ratio: 3 / 4; transform: none; }
+  .mbody { display: flex; flex-direction: column; justify-content: center; gap: 0.6rem; padding: 0.6rem; }
+  .mbody h3 { font-size: 1.9rem; font-weight: 900; line-height: 1.1; }
+  .mbody p { color: var(--muted); font-size: 0.9rem; }
+  .mx { position: absolute; top: 0.6rem; left: 1rem; font-size: 1.8rem; color: var(--muted); z-index: 2; }
+  .mx:hover { color: var(--ink); }
+  @media (max-width: 640px) { .sheet { grid-template-columns: 1fr; } }
+
+  .scrim { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); opacity: 0; pointer-events: none; transition: opacity 0.4s; z-index: 65; }
+  .scrim.open { opacity: 1; pointer-events: auto; }
+  .drawer { position: fixed; top: 0; bottom: 0; right: 0; width: min(400px, 92vw); z-index: 68; background: #0d0d0f; border-left: 1px solid var(--edge); transform: translateX(100%); transition: transform 0.5s cubic-bezier(.2,.8,.2,1); display: flex; flex-direction: column; padding: 1.5rem; }
+  .drawer.open { transform: none; }
+  .dhead { display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem; margin-bottom: 1.5rem; }
+  .dhead .mx { position: static; }
+  .ditems { flex: 1; overflow: auto; display: flex; flex-direction: column; gap: 0.9rem; }
+  .ditem { display: flex; gap: 1rem; align-items: center; padding: 0.7rem; border: 1px solid var(--edge); border-radius: 16px; }
+  .thumb { width: 56px; height: 70px; border-radius: 10px; border: 1px dashed rgba(255, 255, 255, 0.2); flex: none; }
+  .ditem .n { font-weight: 700; }
+  .ditem .p { color: var(--muted); font-size: 0.85rem; }
+  .empty { color: var(--muted); text-align: center; margin-top: 3rem; }
+  .dfoot { border-top: 1px solid var(--edge); padding-top: 1rem; }
+  .dtotal { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem; }
+  .dcheck { width: 100%; justify-content: center; }
+  .social { font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
+  .stars { color: var(--ember-2); letter-spacing: 1px; }
+  .left { color: var(--ember); font-weight: 700; }
+  .sizes { display: flex; gap: 0.4rem; margin: 0.4rem 0; }
+  .sizes button { width: 2.4rem; height: 2.4rem; border-radius: 999px; border: 1px solid var(--edge); font-size: 0.8rem; color: var(--ink); }
+  .sizes button.on { background: var(--ember); border-color: var(--ember); color: #fff; }
+
+  .chips { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+  .chip { padding: 0.5rem 1.1rem; border-radius: 999px; border: 1px solid var(--edge); color: var(--muted); font-size: 0.85rem; background: var(--glass); transition: all 0.25s; }
+  .chip:hover { color: var(--ink); }
+  .chip.on { background: var(--ember); border-color: var(--ember); color: #fff; }
+
+  .toast {
+    position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%) translateY(140px);
+    background: var(--ember); color: #fff; padding: 0.8rem 1.4rem; border-radius: 999px;
+    font-weight: 700; transition: transform 0.45s cubic-bezier(.2,.8,.2,1); z-index: 60;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 760px) {
+    nav { display: none; }
+    #glow { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal { opacity: 1; transform: none; filter: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<header>
+  <div class="logo">مد<i>.</i>خانه</div>
+  <nav>
+    <a href="#drop">درآپ</a>
+    <a href="#join">عضویت</a>
+  </nav>
+  <button class="cart-btn" id="cartBtn">سبد <span class="cart-count" id="cartCount">۰</span></button>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="tag"><span class="dot"></span> DROP 01 · زنده</div>
+    <h1>بی‌شبیه<br><span class="gradient-text">ترین</span> فصل</h1>
+    <p>فروشگاه آنلاین پوشاک مردانه و زنانه با کالکشن محدود. قطعاتی که قبل از هر کسی روی تنت دیده می‌شن. تیراژ محدود، دوخت دقیق، و طراحی‌ای که فقط یک بار ساخته می‌شه.</p>
+    <div class="countdown" id="countdown">
+      <div class="cd"><b id="d">00</b><span>روز</span></div>
+      <div class="cd"><b id="h">00</b><span>ساعت</span></div>
+      <div class="cd"><b id="m">00</b><span>دقیقه</span></div>
+      <div class="cd"><b id="s">00</b><span>ثانیه</span></div>
+    </div>
+    <a href="#drop" class="magnetic" id="magnet">ورود به درآپ <span>↓</span></a>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee"></div>
+</div>
+
+<section class="wrap" id="drop">
+  <div class="head reveal">
+    <h2>درآپ <span class="gradient-text">۰۱</span></h2>
+    <small>۶ قطعه · تیراژ محدود · بدون بازتولید</small>
+  </div>
+  <div class="chips">
+      <button class="chip on" data-c="all">همه</button>
+      <button class="chip" data-c="بالایش">بالاپوش</button>
+      <button class="chip" data-c="شلوار">شلوار و دامن</button>
+      <button class="chip" data-c="لباس">لباس</button>
+      <button class="chip" data-c="تی‌شرت">تی‌شرت</button>
+      <button class="chip" data-c="اکسسوری">اکسسوری</button>
+    </div>
+    <div class="grid" id="products"></div>
+</section>
+
+<section class="join reveal" id="join">
+  <h3>اولین نفری باش که می‌پوشه</h3>
+  <p>عضو شو تا یک ساعت قبل از فروش عمومی دسترسی داشته باشی و ۱۵٪ تخفیف اولین خریدت رو بگیری.</p>
+  <form id="joinForm">
+    <input type="email" placeholder="ایمیلت رو وارد کن" required>
+    <button type="submit">عضویت</button>
+  </form>
+</section>
+
+<footer>
+  <span>© ۱۴۰۵ مد.خانه</span>
+  <span>۰۲۱-۱۲۳۴۵۶۷۸ · info@modkhaneh.ir</span>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="sheet">
+    <button class="mx" id="mx" aria-label="بستن">×</button>
+    <div class="ph big">جای عکس محصول</div>
+    <div class="mbody">
+      <div class="badge" id="mtag"></div>
+      <h3 id="mname"></h3>
+      <p id="mspec"></p>
+      <div class="sizes" id="sizes"><button>S</button><button>M</button><button>L</button><button>XL</button></div>
+      <div class="row">
+        <span class="price" id="mprice"></span>
+        <button class="buy" id="madd">افزودن به سبد</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="سبد خرید">
+  <div class="dhead"><b>سبد خرید</b><button class="mx" id="dx" aria-label="بستن">×</button></div>
+  <div class="ditems" id="ditems"></div>
+  <div class="dfoot"><div class="dtotal"><span>جمع کل</span><span id="dtotal">۰ تومان</span></div><button class="magnetic dcheck">پرداخت امن</button></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script>
+  /* cursor glow */
+  const glow = document.getElementById("glow");
+  let gx = 0, gy = 0, tx = 0, ty = 0;
+  window.addEventListener("pointermove", e => { tx = e.clientX; ty = e.clientY; });
+  (function follow() {
+    gx += (tx - gx) * 0.12; gy += (ty - gy) * 0.12;
+    glow.style.left = gx + "px"; glow.style.top = gy + "px";
+    requestAnimationFrame(follow);
+  })();
+
+  /* magnetic button */
+  const magnet = document.getElementById("magnet");
+  magnet.addEventListener("pointermove", e => {
+    const r = magnet.getBoundingClientRect();
+    const x = e.clientX - (r.left + r.width / 2), y = e.clientY - (r.top + r.height / 2);
+    magnet.style.transform = `translate(${x * 0.25}px, ${y * 0.35}px)`;
+  });
+  magnet.addEventListener("pointerleave", () => magnet.style.transform = "");
+
+  /* countdown to next drop (7 days from load) */
+  const end = Date.now() + 7 * 86400000;
+  const pad = n => String(n).padStart(2, "0");
+  function tick() {
+    let diff = Math.max(0, end - Date.now());
+    const d = Math.floor(diff / 86400000); diff %= 86400000;
+    const h = Math.floor(diff / 3600000); diff %= 3600000;
+    const m = Math.floor(diff / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById("d").textContent = pad(d);
+    document.getElementById("h").textContent = pad(h);
+    document.getElementById("m").textContent = pad(m);
+    document.getElementById("s").textContent = pad(s);
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* marquee */
+  const words = ["درآپ ۰۱", "تیراژ محدود", "دوخت دستی", "بدون بازتولید", "ارسال سریع"];
+  document.getElementById("marquee").innerHTML =
+    Array(4).fill(words.map(w => `<span>${w} ✦</span>`).join("")).join("");
+
+  /* products */
+  const products = [
+    { name: "پافر اکسید", tag: "DROP 01", spec: "۳ رنگ · سایز S–XL", price: "۱,۲۵۰,۰۰۰ ت" },
+    { name: "لایه‌ای شب", tag: "محدود", spec: "۲ رنگ · سایز M–XXL", price: "۹۸۰,۰۰۰ ت" },
+    { name: "شل آسفالت", tag: "جدید", spec: "۴ رنگ · سایز S–XL", price: "۸۴۰,۰۰۰ ت" },
+    { name: "کت فولادی", tag: "لوکس", spec: "۱ رنگ · سایز S–L", price: "۲,۴۰۰,۰۰۰ ت" },
+    { name: "بادگیر خاکی", tag: "DROP 01", spec: "۳ رنگ · سایز S–XL", price: "۷۶۰,۰۰۰ ت" },
+    { name: "پیراهن دودی", tag: "محدود", spec: "۲ رنگ · سایز M–L", price: "۶۴۰,۰۰۰ ت" }
+  ];
+  products.push(
+    { name: "شلوار کارگو خاکی", tag: "جدید", spec: "۲ رنگ · سایز ۲۸–۳۴", price: "۶۸۰,۰۰۰ ت" },
+    { name: "شلوار جین مشکی", tag: "", spec: "۳ رنگ · سایز ۲۸–۳۶", price: "۷۲۰,۰۰۰ ت" },
+    { name: "دامن midi چرم", tag: "محدود", spec: "۲ رنگ · سایز S–L", price: "۸۸۰,۰۰۰ ت" },
+    { name: "تی‌شرت پایه سفید", tag: "پرفروش", spec: "۴ رنگ · سایز S–XXL", price: "۲۹۰,۰۰۰ ت" },
+    { name: "کلاه بافت زغالی", tag: "", spec: "یک سایز", price: "۲۱۰,۰۰۰ ت" },
+    { name: "کمربند چرم", tag: "", spec: "۲ رنگ · ۱۰۰ تا ۱۲۰", price: "۳۳۰,۰۰۰ ت" }
+  );
+  const catOf = p => /شلوار|دامن/.test(p.name) ? "شلوار" : /پیراهن|لباس|midi/.test(p.name) ? "لباس" : /تی.?شرت/.test(p.name) ? "تی‌شرت" : /کلاه|کمربند|کیف/.test(p.name) ? "اکسسوری" : "بالاپوش";
+  document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".chip").forEach(x => x.classList.remove("on"));
+    b.classList.add("on");
+    document.querySelectorAll("#products .card").forEach(c => {
+      c.style.display = (b.dataset.c === "all" || c.dataset.c === b.dataset.c) ? "" : "none";
+    });
+  }));
+  const grid = document.getElementById("products");
+  products.forEach(p => {
+    const el = document.createElement("article");
+    el.className = "card reveal"; el.dataset.c = catOf(p);
+    el.innerHTML = `
+      <div class="ph">جای عکس محصول</div>
+      <div class="meta">
+        <div class="badge">${p.tag}</div>
+        <div class="name">${p.name}</div>
+        <div class="spec">${p.spec}</div>
+        <div class="social"><span class="stars">★★★★★</span> ${["۴.۸","۴.۶","۴.۹","۴.۷","۴.۵","۴.۸"][products.indexOf(p) % 6]} · <span class="left">فقط ${["۳","۷","۲","۱۲","۵","۹"][products.indexOf(p) % 6]} عدد مونده</span></div>
+        <div class="row">
+          <span class="price">${p.price}</span>
+          <button class="buy">افزودن</button>
+        </div>
+      </div>`;
+    el.querySelector(".buy").addEventListener("click", e => { e.stopPropagation(); addToCart(p); });
+    el.addEventListener("click", () => openModal(p));
+    grid.appendChild(el);
+  });
+
+  /* 3D tilt */
+  grid.addEventListener("pointermove", e => {
+    const card = e.target.closest(".card");
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    card.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 14}deg) translateZ(0)`;
+  });
+  grid.addEventListener("pointerleave", () => {
+    grid.querySelectorAll(".card").forEach(c => c.style.transform = "");
+  }, true);
+  grid.addEventListener("pointerout", e => {
+    const card = e.target.closest(".card");
+    if (card && !card.contains(e.relatedTarget)) card.style.transform = "";
+  });
+
+  /* embers */
+  const cv = document.getElementById("embers"), cx = cv.getContext("2d");
+  let W, H; const P = [];
+  function rs() { W = cv.width = innerWidth; H = cv.height = innerHeight; }
+  rs(); addEventListener("resize", rs);
+  for (let i = 0; i < 90; i++) P.push({ x: Math.random() * innerWidth, y: Math.random() * innerHeight, r: Math.random() * 2 + 0.5, v: Math.random() * 0.6 + 0.2, a: Math.random() });
+  (function loop() {
+    cx.clearRect(0, 0, W, H);
+    for (const p of P) {
+      p.y -= p.v; p.x += Math.sin(p.y / 40) * 0.3;
+      if (p.y < -5) { p.y = H + 5; p.x = Math.random() * W; }
+      cx.beginPath(); cx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      cx.fillStyle = `rgba(255, ${120 + Math.floor(p.a * 100)}, 60, ${0.25 + p.a * 0.5})`;
+      cx.shadowBlur = 10; cx.shadowColor = "#ff5b2e"; cx.fill();
+    }
+    requestAnimationFrame(loop);
+  })();
+
+  /* quick view */
+  const modal = document.getElementById("modal");
+  function openModal(p) {
+    document.getElementById("mtag").textContent = p.tag;
+    document.getElementById("mname").textContent = p.name;
+    document.getElementById("mspec").textContent = p.spec + " · ۱۲ نفر در حال مشاهده";
+    document.getElementById("mprice").textContent = p.price;
+    current = p; modal.classList.add("open");
+  }
+  modal.addEventListener("click", e => { if (e.target === modal || e.target.id === "mx") modal.classList.remove("open"); });
+  document.getElementById("madd").addEventListener("click", () => { addToCart(current); modal.classList.remove("open"); });
+
+  let current = null, items = [];
+  const drawer = document.getElementById("drawer"), scrim = document.getElementById("scrim");
+  const toNum = s => Number(s.replace(/[۰-۹]/g, d => "۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[^\d]/g, ""));
+  function openCart() { renderCart(); drawer.classList.add("open"); scrim.classList.add("open"); }
+  function closeCart() { drawer.classList.remove("open"); scrim.classList.remove("open"); }
+  function renderCart() {
+    const box = document.getElementById("ditems");
+    box.innerHTML = items.length
+      ? items.map(p => `<div class="ditem"><div class="thumb"></div><div><div class="n">${p.name}</div><div class="p">${p.price}</div></div></div>`).join("")
+      : '<div class="empty">سبدت هنوز خالیه</div>';
+    const total = items.reduce((s, p) => s + toNum(p.price), 0);
+    document.getElementById("dtotal").textContent = total.toLocaleString("fa-IR") + " تومان";
+  }
+  document.getElementById("dx").addEventListener("click", closeCart);
+  scrim.addEventListener("click", closeCart);
+  document.querySelector(".dcheck").addEventListener("click", () => show("درگاه پرداخت به‌زودی فعال می‌شه"));
+  document.querySelectorAll("#sizes button").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll("#sizes button").forEach(x => x.classList.remove("on"));
+    b.classList.add("on");
+  }));
+
+  /* cart + toast */
+  let cart = 0, timer;
+  const toast = document.getElementById("toast");
+  function show(msg) {
+    toast.textContent = msg; toast.classList.add("show");
+    clearTimeout(timer); timer = setTimeout(() => toast.classList.remove("show"), 1700);
+  }
+  function addToCart(p) {
+    cart++; items.push(p);
+    document.getElementById("cartCount").textContent = cart.toLocaleString("fa-IR");
+    show("به سبد اضافه شد ✦");
+  }
+  document.getElementById("cartBtn").addEventListener("click", openCart); void (() =>
+    show(cart ? `${cart.toLocaleString("fa-IR")} قطعه توی سبدته` : "سبدت هنوز خالیه")
+  );
+  document.getElementById("joinForm").addEventListener("submit", e => {
+    e.preventDefault(); show("دسترسی زودهنگام فعال شد"); e.target.reset();
+  });
+
+  /* scroll reveal */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
